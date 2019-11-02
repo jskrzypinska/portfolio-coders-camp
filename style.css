@@ -87,7 +87,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   max-width: 100vw;
-  min-height: 150vh;
+  min-height: 100vh;
   border-bottom: 1px solid black;
 }
 
@@ -407,7 +407,7 @@ hr.light-100 {
 
   .hero {
     max-width: 100vw;
-    min-height: 150vh;
+    min-height: 100vh;
   }
 
   .hero-content {
