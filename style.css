@@ -33,11 +33,6 @@ nav #icons {
   border-bottom: 1px solid black;
 }
 
-nav .logo {
-  display: flex;
-  justify-content: center;
-}
-
 .menu-fold {
   height: 350px;
   transition: 300ms;
@@ -47,7 +42,6 @@ nav .logo {
   margin-top: 14px;
   width: 75%;
 }
-
 
 nav ul {
   margin-block-start: 0;
@@ -214,7 +208,6 @@ nav ul li a:hover {
   line-height: 1.4;
 }
 
-
 .fa-code,
 .fa-react,
 .fa-js-square,
@@ -264,10 +257,6 @@ div.gallery img {
   height: auto;
 }
 
-div.gallery img:hover {
-  color: black;
-}
-
 div.desc {
   padding: 15px;
   text-align: center;
@@ -283,12 +272,6 @@ div.desc {
 
 .gallery {
   position: relative;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .overlay {
@@ -357,8 +340,7 @@ hr.light-100 {
 }
 
 /* desktop styles */
-
-@media (min-width: 640px) and (max-width: 1050px) {
+@media (min-width: 640px) {
   nav {
     display: flex;
     flex-flow: row nowrap;
@@ -369,7 +351,7 @@ hr.light-100 {
 
   nav #icons {
     max-width: 130px;
-    border-bottom: none;
+    border: none;
   }
 
   nav ul {
@@ -388,12 +370,6 @@ hr.light-100 {
     line-height: 100px;
   }
 
-  nav ul li .logo img {
-    display: flex;
-    margin: 0 auto;
-    width: 80px;
-  }
-
   nav ul li a {
     padding: 0;
     margin: 0;
@@ -410,6 +386,26 @@ hr.light-100 {
     min-height: 80vh;
   }
 
+  .social-links {
+    margin-top: 10px;
+  }
+
+  div.gallery {
+    border: none;
+    width: 50%;
+  }
+
+  .fa-code, .fa-react, .fa-js-square, .fa-css3 {
+    font-size: 4em;
+    margin: 1rem;
+  }
+
+  footer h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1050px) {  
   .hero-content {
     text-align: right;
     width: 100%;
@@ -420,24 +416,19 @@ hr.light-100 {
     padding-top: 100px;
   }
 
-  .social-links {
-    margin-top: 10px;
-  }
-
   .social-links a {
     font-size: 3rem;
     padding: 10px;
   }
 
-  .about h2 {
-    font-size: 3rem;
+  .about h2, .skills-section h2 {
+    font-size: 3.5rem;
   }
 
   .aboutme {
     color: black;
     font-weight: 400;
   }
-
 
   .aboutme-left-img img {
     max-height: 280px;
@@ -468,10 +459,6 @@ hr.light-100 {
     font-size: 2rem;
   }
 
-  .skills-section h2 {
-    font-size: 3.5rem;
-  }
-
   .skills {
     display: flex;
     padding: 50px;
@@ -499,22 +486,6 @@ hr.light-100 {
     flex-wrap: wrap;
   }
 
-  div.gallery {
-    width: 50%;
-  }
-
-  .fa-code,
-  .fa-react,
-  .fa-js-square,
-  .fa-css3 {
-    font-size: 4em;
-    margin: 1rem;
-  }
-
-  footer h1 {
-    font-size: 3rem;
-  }
-
   .footer-links a {
     font-size: 2.2em;
     padding: 1rem;
@@ -522,57 +493,6 @@ hr.light-100 {
 }
 
 @media (min-width: 1051px) {
-  nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    width: 100%;
-    top: 0px;
-  }
-
-  nav #icons {
-    max-width: 130px;
-    border: none;
-  }
-
-  nav ul {
-    flex-flow: row nowrap;
-    max-width: 800px;
-    display: flex;
-    height: 100px;
-  }
-
-  nav #burger {
-    display: none;
-  }
-
-  nav ul li {
-    min-width: 120px;
-    line-height: 100px;
-  }
-
-  nav ul li .logo img {
-    display: flex;
-    margin: 0 auto;
-    width: 80px;
-  }
-
-  nav ul li a {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .menu-fold {
-    height: 100px;
-  }
-
-  .hero {
-    min-width: 100vw;
-    min-height: 80vh;
-  }
-
   .hero-content {
     text-align: right;
     margin-right: 5%;
@@ -590,15 +510,11 @@ hr.light-100 {
     font-size: 4rem
   }
 
-  .social-links {
-    margin-top: 10px;
-  }
-
   .social-links a {
     font-size: 3rem;
   }
 
-  .about h2 {
+  .about h2, .skills-section h2 {
     font-size: 3.5rem;
     padding: 1%;
   }
@@ -610,7 +526,6 @@ hr.light-100 {
     font-size: 1.5rem;
     box-shadow: 1px 1px 7px gray;
     background-color: rgba(245, 245, 245, 0.753);
-
   }
 
   .aboutme-left {
@@ -639,7 +554,6 @@ hr.light-100 {
     display: flex;
     color: black;
     font-weight: 400;
-
   }
 
   .items h1 {
@@ -676,19 +590,6 @@ hr.light-100 {
     padding: 5%;
   }
 
-  .skills-section h2 {
-    font-size: 3.5rem;
-    padding: 1%;
-  }
-
-  .fa-code,
-  .fa-react,
-  .fa-js-square,
-  .fa-css3 {
-    font-size: 4em;
-    margin: 1rem;
-  }
-
   .gallery-section {
     padding: 0;
     padding-bottom: 20px;
@@ -710,17 +611,8 @@ hr.light-100 {
     margin-right: 30%;
   }
 
-  div.gallery {
-    border: none;
-    width: 50%;
-  }
-
   div.desc {
     border: 1px solid #ccc;
-  }
-
-  footer h1 {
-    font-size: 3rem;
   }
 
   .container-footer {
