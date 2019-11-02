@@ -236,6 +236,10 @@ nav ul li a:hover {
   color: #333;
 }
 
+.gallery-container {
+  box-shadow: 1px 1px 7px gray;
+}
+
 .gallery-section {
   background-color: rgb(238, 229, 228);
   padding: 2%;
@@ -604,7 +608,7 @@ hr.light-100 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    box-shadow: 1px 1px 7px gray;
+    /* box-shadow: 1px 1px 7px gray; */
 
   }
 
