@@ -87,7 +87,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   max-width: 100vw;
-  min-height: 100vh;
+  min-height: 150vh;
   border-bottom: 1px solid black;
 }
 
