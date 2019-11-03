@@ -148,11 +148,14 @@ nav ul li a:hover {
   background-color: rgba(245, 245, 245, 0.753);
   font-weight: 600;
   box-shadow: 1px 1px 7px black;
+  overflow: hidden;
 }
 
 .aboutme-left {
   display: flex;
   letter-spacing: 0.04rem;
+  padding-top: 30px;
+  font-size: 1.1rem
 }
 
 .aboutme-left-img img {
